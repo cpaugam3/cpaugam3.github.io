@@ -1,34 +1,68 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<h1>Staff</h1>
-
-<div class="hvrbox">
-
-    <img src="https://user-images.githubusercontent.com/89251520/155571298-59fef9be-9941-436e-a17b-2b6e88d0632a.jpg" alt = "Steve Stivers" class = "SteveS" >
-        <div class="hvrbox-layer_top hvrbox-layer_slideup">
-            <div class="hvrbox-text">President & CEO</div>
-        </div>
-
-</div>
-
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+.container {
+  position: relative;
+  width: 50%;
+}
 
-.hvrbox .hvrbox-layer_slideup {
-	-moz-transform: translateY(100%);
-	-webkit-transform: translateY(100%);
-	-ms-transform: translateY(100%);
-	transform: translateY(100%);
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
-.hvrbox:hover .hvrbox-layer_slideup,
-.hvrbox.active .hvrbox-layer_slideup {
-	-moz-transform: translateY(0);
-	-webkit-transform: translateY(0);
-	-ms-transform: translateY(0);
-	transform: translateY(0);
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: blue;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  opacity: .5;
 }
+
+.container:hover .overlay {
+  height: 50%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 100;
+
+}
+
 
 </style>
+</head>
+<body>
+
+<h2>Staff</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+  <img src="https://user-images.githubusercontent.com/89251520/155571298-59fef9be-9941-436e-a17b-2b6e88d0632a.jpg" alt="steve" class="image">
+  <div class="overlay">
+    <div class="text">President & CEO <br>
+    Phone: 614-228-4201 <br> 
+    sstivers@ohiochamber.com <br>
+	Steve Stiver's bio
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
