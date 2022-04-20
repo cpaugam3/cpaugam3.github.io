@@ -106,22 +106,20 @@ li a:hover {
  </header>
  
  <body>
-  
-  <!--Sidebar-->
-  <!--
- <div class="sidebar">
-  <img src="https://user-images.githubusercontent.com/89251520/155946439-352236e8-4821-4e08-be89-c828f6a60b14.jpg" class="selfphoto">
- </div>
- -->
   <!--Main Content-->
   <div class="main" >
-<h1> Website In Progress </h1><br>
- <h2>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. <br> Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</h2>
-  <h2>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. <br> Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</h2>
-  <h2>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. <br>Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</h2>
-  <h2>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo.<br> Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</h2>
+    <h1> Website In Progress </h1><br>
+   
+   
+    <ul id="myCarousel">
+     <li>One</li>
+     <li>Two</li>
+     <li>Three</li>
+     <li>Four</li>
+    </ul>
+  </div>
  </body>
-  <div>
+  
 <footer>
  <div class="footer"> 
 <!--Facebook-->
@@ -134,7 +132,38 @@ li a:hover {
 <a href="https://www.linkedin.com/in/cpaugam3/" class="fa fa-linkedin"></a>
   </div>
 </footer>
-
+<script>
+ $(window).load(function() {
+  $("#myCarousel").flexisel({
+    visibleItems: 4,
+    itemsToScroll: 3,
+    animationSpeed: 400,
+    infinite: true,
+    navigationTargetSelector: null,
+    autoPlay: {
+      enable: false,
+      interval: 5000,
+      pauseOnHover: true
+    },
+    responsiveBreakpoints: { 
+      portrait: { 
+        changePoint:480,
+        visibleItems: 1,
+        itemsToScroll: 1
+      }, 
+        landscape: { 
+        changePoint:640,
+        visibleItems: 2,
+        itemsToScroll: 2
+      },
+        tablet: { 
+        changePoint:768,
+        visibleItems: 3,
+        itemsToScroll: 3
+      }
+    }
+  });
+});
 </script>
 </body>
 </html>
