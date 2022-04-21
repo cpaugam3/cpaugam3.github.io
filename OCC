@@ -1,0 +1,15 @@
+<! DOCTYPE html> 
+
+<html>
+<body>
+<div id=main>
+
+  <div id=imageBox>This div will have Images</div>
+  
+  <div id=jobTitle>This div will have Job Titles</div>
+  
+  <div id=name>This div will have names</div>
+  
+</div>
+</body>
+</html>
