@@ -15,18 +15,29 @@ top: 257px;
 background: #C4C4C4;
 }
 
-div #jobTitle1 {left: 110px;}
-div #jobTitle2 {left: 566px;}
-div #jobTitle3 {left: 1022px;}
+div #jobTitle1 {left: 103px;}
+div #jobTitle2 {left: 563px;}
+div #jobTitle3 {left: 1023px;}
 
 div #jobTitle1, #jobTitle2, #jobTitle3 {
 position: absolute;
-width: 307px;
+width: 314px;
 height: 40px;
 top: 666px;
 background: #C4C4C4;
 }
 
+div #name1 {left:103px;}
+div #name2 {left: 563px;}
+div #name3 {left: 1023px;}
+
+div #name1, #name2, #name3 {
+position: absolute;
+width: 314px;
+height: 40px;
+top: 720px;
+background: #C4C4C4;
+}
 </style>
 <body>
 <div id=main>
@@ -39,7 +50,9 @@ background: #C4C4C4;
   <div id=jobTitle2>Job Title</div>
   <div id=jobTitle3>Job Title</div>
   
-  <div id=name>Name of person</div>
+  <div id=name1>Name of person</div>
+  <div id=name2>Name of person</div>
+  <div id=name3>Name of person</div>
   
 </div>
 </body>
