@@ -42,7 +42,7 @@ background: #C4C4C4;
 <body>
 <div id=main>
 
-  <div id=imageBox1>Image box</div>
+  <div id=imageBox1><img src="https://user-images.githubusercontent.com/89251520/155571298-59fef9be-9941-436e-a17b-2b6e88d0632a.jpg" alt="steve"></div>
   <div id=imageBox2>Image box</div>
   <div id=imageBox3>Image box</div>
   
