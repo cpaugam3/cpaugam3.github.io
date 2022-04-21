@@ -5,13 +5,62 @@
 <title>Camille's Personal Website</title>
 
 <style>
+html {
+  overflow-x: hidden; /*Makes user unable to scroll*/ 
+}
 
 #headerBox {
-position: absolute;
-width: 100%;
+position: fixed;
+min-width: 100%;
 height: 200px;
+left: 0;
+top: 0;
 background: #37B9B1B0;
 
+}
+
+ul {
+list-style-type: none;
+position: fixed; 
+min-width: 100%;
+height: 45px;
+top: 175px; 
+left: 0;
+background: #18CA1F;
+}
+
+li {
+float: left;
+display: inline; 
+}
+
+li a {
+font-family: Tahoma, Verdana; 
+display: block;
+color: black;
+text-align: center;
+padding: 14px 10px; /*Padding: top, right, bottom, left*/
+text-decoration: none;
+
+}
+
+/* Changes the link color on hover */
+li a:hover {
+  background-color: rgb(22, 155, 22);
+}
+
+
+#photoCircle { 
+    position: fixed;
+    margin: auto;
+    width: 300px; 
+    height: 300px; 
+    top: 75px; 
+    left: 0; /*Left and right 0 makes the "sun" centered*/
+    right: 0;
+    border-radius: 50%;
+    background-color: #F8FD11;
+    display: inline-block;
 }
 
 </style>
@@ -19,7 +68,16 @@ background: #37B9B1B0;
 
 <body>
 <div id=headerBox></div>
-
+<nav id="navBar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="highschool.html">High School</a></li>
+        <li><a href="college.html">College</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<span id="photoCircle"></span>
 
 </body>
 </html>
