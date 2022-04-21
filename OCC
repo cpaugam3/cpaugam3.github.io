@@ -1,14 +1,31 @@
 <! DOCTYPE html> 
 
 <html>
+<style>
+
+div #imageBox1 {left: 103px;}
+div #imageBox2 {left: 563px;}
+div #imageBox3 {left: 1023px;}
+
+div #imageBox1, #imageBox2, #imageBox3 {
+position: absolute;
+width: 314px;
+height: 379px;
+top: 257px;
+background: #C4C4C4;
+}
+
+</style>
 <body>
 <div id=main>
 
-  <div id=imageBox>This div will have Images</div>
+  <div id=imageBox1>Image box</div>
+  <div id=imageBox2>Image box</div>
+  <div id=imageBox3>Image box</div>
   
-  <div id=jobTitle>This div will have Job Titles</div>
+  <div id=jobTitle>Job Title</div>
   
-  <div id=name>This div will have names</div>
+  <div id=name>Name of person</div>
   
 </div>
 </body>
