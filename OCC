@@ -15,6 +15,18 @@ top: 257px;
 background: #C4C4C4;
 }
 
+div #jobTitle1 {left: 110px;}
+div #jobTitle2 {left: 566px;}
+div #jobTitle3 {left: 1022px;}
+
+div #jobTitle1, #jobTitle2, #jobTitle3 {
+position: absolute;
+width: 307px;
+height: 40px;
+top: 666px;
+background: #C4C4C4;
+}
+
 </style>
 <body>
 <div id=main>
@@ -23,7 +35,9 @@ background: #C4C4C4;
   <div id=imageBox2>Image box</div>
   <div id=imageBox3>Image box</div>
   
-  <div id=jobTitle>Job Title</div>
+  <div id=jobTitle1>Job Title</div>
+  <div id=jobTitle2>Job Title</div>
+  <div id=jobTitle3>Job Title</div>
   
   <div id=name>Name of person</div>
   
